@@ -283,7 +283,7 @@ app.post('/api/submit-answers', async (req, res) => {
 
 
 
-// const __dirname = path.resolve();
+const __dirname = path.resolve();
 // app.use('/', express.static(path.join(__dirname, './twitter/build')))
 // app.use('*', express.static(path.join(__dirname, './twitter/build')))
 
