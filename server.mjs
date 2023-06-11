@@ -287,11 +287,11 @@ const __dirname = path.resolve();
 // app.use('/', express.static(path.join(__dirname, './twitter/build')))
 // app.use('*', express.static(path.join(__dirname, './twitter/build')))
 
-// app.use(express.static(path.join(__dirname, 'frontend/build')));
+app.use(express.static(path.join(__dirname, 'frontend/build')));
 
-// app.get('*', (req, res) => {
-//   res.sendFile(path.join(__dirname, 'frontend/build', 'index.html'));
-// });
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'frontend/build', 'index.html'));
+});
 
 // THIS IS THE ACTUAL SERVER WHICH IS RUNNING
 
